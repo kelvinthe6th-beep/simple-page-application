@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly Dictionary</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>📖 Wordly Dictionary</h1>
+
+        <div class="search-box">
+            <input type="text" id="wordInput" placeholder="Search a word...">
+            <button id="searchBtn">Search</button>
+            <button id="historyBtn">History</button>
+        </div>
+
+        <!-- RESULT -->
+        <div id="result"></div>
+
+        <!-- HISTORY -->
+        <div id="historyContainer" class="hidden">
+            <h2>📜 Search History</h2>
+            <ul id="historyList"></ul>
+        </div>
+
+        <!-- FAVORITES -->
+        <h2>⭐ Favorites</h2>
+        <ul id="favoritesList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
