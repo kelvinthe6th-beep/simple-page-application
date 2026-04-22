@@ -27,6 +27,7 @@ async function fetchWord(word) {
         displayResult(data[0]);
 
     } catch (error) {
+        console.error("Error fetching word:", error);
         resultDiv.innerHTML = `<p>Error fetching data</p>`;
     }
 }
